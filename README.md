@@ -4,7 +4,7 @@ An Ansible Execution Environment for AWX project.
 
 ## Customizings
 
-Additional code:
+Additional code in Containerfile:
 ```
 RUN update-ca-trust force-enable
 ADD bundle-ca.crt /etc/pki/ca-trust/source/anchors/
@@ -17,6 +17,8 @@ Custom files:
 bundle-ca.crt > replace trough your cert from (own) custom ca
 krb5.conf > replace it trough your kerberos config
 ```
+
+Define your url in tox.ini
 
 ## Regenerating the build context with podman:
 
