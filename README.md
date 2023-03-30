@@ -20,6 +20,11 @@ krb5.conf > replace it trough your kerberos config
 
 Define your url in tox.ini
 
+For working correct, add this line in awx templates:
+```
+ansible_winrm_ca_trust_path: /etc/pki/ca-trust/source/anchors/bundle-ca.crt
+```
+
 ## Regenerating the build context with podman:
 
 ```bash
