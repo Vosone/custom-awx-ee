@@ -1,4 +1,4 @@
-# AWX EE
+# Custom Ansible AWX EE
 
 An Ansible Execution Environment for AWX project.
 
